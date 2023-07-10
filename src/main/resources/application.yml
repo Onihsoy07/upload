@@ -4,3 +4,12 @@ logging:
       apache:
         coyote:
           http11: debug
+
+file:
+  dir: D:/JAVA/file/
+
+spring:
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
