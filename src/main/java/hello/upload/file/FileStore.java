@@ -31,7 +31,7 @@ public class FileStore {
         //서버에 저장하는 파일명 UUID로
         String storeFileName = createStoreFileName(originalFilename);
 
-        multipartFile.transferTo(new File(storeFileName));
+        multipartFile.transferTo(new File(getFullPath(storeFileName)));
 
         return new UploadFile(originalFilename, storeFileName);
     }
